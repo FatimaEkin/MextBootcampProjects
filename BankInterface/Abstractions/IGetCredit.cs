@@ -2,6 +2,6 @@
 
 public interface IGetCredit
 {
-   void GetCredit();
+   decimal GetCredit();
    
 }

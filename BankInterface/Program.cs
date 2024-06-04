@@ -9,6 +9,8 @@ Garanti.TotalAmount = 6;
 
 Garanti.GetCredit();
 
+Console.WriteLine(Garanti.CSV());
+
 ZiraatKatilim Ziraat = new();
 
 Ziraat.Amount = 200_000;
@@ -16,4 +18,6 @@ Ziraat.InterestRate = 4;
 Ziraat.Months = 2;
 Ziraat.TotalAmount = 2;
 
- Ziraat.GetCredit();
+Ziraat.GetCredit();
+
+Console.WriteLine(Ziraat.CSV());
