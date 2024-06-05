@@ -18,6 +18,7 @@ Ziraat.InterestRate = 4;
 Ziraat.Months = 2;
 Ziraat.TotalAmount = 2;
 
+
 Ziraat.GetCredit();
 
 Console.WriteLine(Ziraat.CSV());
