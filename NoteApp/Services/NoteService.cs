@@ -18,5 +18,19 @@ public class NoteService : INoteService
             return note;
         }
 
-        
+        public void SaveNote(string text)
+        {
+            try
+            {
+                using (StreamWriter writer = new StreamWriter(noteFilePath, append: true))
+                {
+                    writer.WriteLine(text);
+                }
+                Console.WriteLine("Not başarıyla kaydedildi.");
+            }
+            catch (IOException e)
+            {
+                Console.WriteLine($"Not kaydedilirken bir hata oluştu: {e.Message}");
+            }
+        }
 }
