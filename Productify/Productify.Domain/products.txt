@@ -1,0 +1,5 @@
+acde9d1c-a6a7-434d-8dd1-bc5f35d4e35a,Iphone,15 Pro,58000,7
+65f3eccd-75e6-4e61-ac31-c837e8f4d917,Samsung,G5,25,5
+bf4a5299-93cf-4e11-a181-86ce1edba516,Lenovo,Core i7 512 GB,69000,9
+5d3012e6-e20c-43d0-8935-e37f97486dc5,Iphone,14 ProMax,58000,7
+593d14e9-44d1-45c3-b3f5-7b1859fb87b4,Samsung,Galaxy S24,47000,5
