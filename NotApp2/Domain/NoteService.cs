@@ -1,23 +1,23 @@
 ﻿namespace Domain;
 
-public class NoteService
+public class NoteService : INoteService
 {
-   private string dosyaYolu = "/Users/fatimaekin/NotApp2/Console/notlar.txt";
+    private string dosyaYolu = "/Users/fatimaekin/NotApp2/Console/notlar.txt";
 
-        public void AddNote(string note)
+    public void AddNote(string note)
+    {
+        File.AppendAllText(dosyaYolu, note + "\n");
+    }
+
+    public string GetAllNotes()
+    {
+        if (File.Exists(dosyaYolu))
         {
-            File.AppendAllText(dosyaYolu, note + "\n");
+            return File.ReadAllText(dosyaYolu);
         }
-
-        public string GetAllNotes()
+        else
         {
-            if (File.Exists(dosyaYolu))
-            {
-                return File.ReadAllText(dosyaYolu);
-            }
-            else
-            {
-                return "Henüz kaydedilmiş bir not yok.";
-            }
-}
+            return "Henüz kaydedilmiş bir not yok.";
+        }
+    }
 }
