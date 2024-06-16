@@ -38,7 +38,7 @@ public class PhoneService : IPhoneService
             var csvLine = $"{phone.Id},{phone.Brand},{phone.Price},{phone.Model},{phone.Battery.Capacity},{phone.Battery.Level},{phone.Battery.Type},{phone.Battery.Power},{phone.Screen.ScreenSize},{phone.Screen.Resolation},{phone.Screen.Pixel},{phone.Screen.Area},{phone.Camera.Resolation},{phone.Camera.Distance}";
 
            
-            File.AppendAllText(_csvFilePath, csvLine + Environment.NewLine);
+            File.AppendAllText(_csvFilePath, csvLine + "\n");
         }
 
         }
