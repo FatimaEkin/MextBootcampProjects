@@ -2,7 +2,7 @@
 
 public class BodyMassIndex
 {
-  public double kilo {get; set;}
-  public double boy {get; set;}
+  public double Kilo {get; set;}
+  public double Boy {get; set;}
   
 }
