@@ -14,9 +14,9 @@ namespace App.WebAPI;
         [HttpPost]
         public IActionResult GetBMI(BodyMassIndex bodyMassIndex)
         {
-            double bmi = bodyMassIndex.kilo / (bodyMassIndex.boy * bodyMassIndex.boy);
+            double bmi = bodyMassIndex.Kilo / (bodyMassIndex.Boy * bodyMassIndex.Boy);
             
-            _textService.SaveText($"Kilo: {bodyMassIndex.kilo}, Boy: {bodyMassIndex.boy}, Vücut Kitle İndeksi: {bmi}");
+            _textService.SaveText($"Kilo: {bodyMassIndex.Kilo}, Boy: {bodyMassIndex.Boy}, Vücut Kitle İndeksi: {bmi}");
             
             return Ok(new { VucutKitleIndeksi = bmi });
 
