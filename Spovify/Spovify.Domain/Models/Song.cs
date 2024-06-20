@@ -2,7 +2,7 @@
 
 public class Song
 {
-  public Guid Id { get; set; }
+    public Guid Id { get; set; }
     public string Name { get; set; }
     public Person Artist { get; set; }
     public Person Producer { get; set; }
