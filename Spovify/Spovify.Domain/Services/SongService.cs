@@ -47,6 +47,19 @@ public class SongService
                 Nick = values[9],
 
             };
+            var lyricist = new Person()
+            {
+                Id = Guid.Parse(values[10]),
+                Name = values[11],
+                Surname = values[12],
+                Nick = values[13],
+
+            };
+
+            
+        }
+
+        return songs;
 
     }
 }
