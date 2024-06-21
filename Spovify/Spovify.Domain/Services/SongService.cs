@@ -22,13 +22,13 @@ public class SongService
         var data = File.ReadAllText(path);
 
         var lines = data.Split("\n", StringSplitOptions.RemoveEmptyEntries);
-         foreach (var line in lines)
+        foreach (var line in lines)
         {
             // if (string.IsNullOrEmpty(line))
             // {
             //     continue;
             // }
-            
+
             var values = line.Split(",");
 
             var artist = new Person()
@@ -56,7 +56,16 @@ public class SongService
 
             };
 
-            
+            var song = new Song()
+            {
+                Id = Guid.Parse(values[0]),
+                Name = values[1],
+                Artist = artist,
+                Producer = producer,
+                Lyricist = lyricist,
+            };
+
+            songs.Add(song);
         }
 
         return songs;
