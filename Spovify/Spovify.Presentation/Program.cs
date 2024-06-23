@@ -30,9 +30,3 @@ var songService = new SongService();
 
 songService.AddSong(song);
 
-// var songsFromText = songService.GetSongs();
-
-// foreach (var songFromText in songsFromText)
-// {
-//     Console.WriteLine($"{songFromText.Name} - {songFromText.Artist.Name}");
-// }
