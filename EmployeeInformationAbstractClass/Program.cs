@@ -1,7 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+FullTimeEmployee fullTimeEmployee = new FullTimeEmployee
+        {
+            FirstName = "Ahmet",
+            LastName = "Yılmaz",
+            MonthlySalary = 5000m
+        };
 
-
+        
 
 public abstract class Employee
 {
