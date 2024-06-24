@@ -16,7 +16,14 @@ PartTimeEmployee partTimeEmployee = new PartTimeEmployee
             HoursWorked = 80
         };
 
-        
+ Freelancer freelancer = new Freelancer
+        {
+            FirstName = "Mehmet",
+            LastName = "Demir",
+            ProjectRate = 1000m,
+            ProjectsCompleted = 3
+        };
+   
        
        
 
