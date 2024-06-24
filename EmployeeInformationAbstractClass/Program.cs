@@ -24,7 +24,10 @@ PartTimeEmployee partTimeEmployee = new PartTimeEmployee
             ProjectsCompleted = 3
         };
    
-       
+Console.WriteLine("Ful Time Çalışanların Maaşı : " + fullTimeEmployee.CalculateMonthlySalary());
+Console.WriteLine("Ful Time Çalışanların Maaşı : " + partTimeEmployee.CalculateMonthlySalary());
+Console.WriteLine("Ful Time Çalışanların Maaşı : " + freelancer.CalculateMonthlySalary());
+             
        
 
 public abstract class Employee
