@@ -7,7 +7,18 @@ FullTimeEmployee fullTimeEmployee = new FullTimeEmployee
             MonthlySalary = 5000m
         };
 
+
+PartTimeEmployee partTimeEmployee = new PartTimeEmployee
+        {
+            FirstName = "Ayşe",
+            LastName = "Kara",
+            HourlyRate = 50m,
+            HoursWorked = 80
+        };
+
         
+       
+       
 
 public abstract class Employee
 {
