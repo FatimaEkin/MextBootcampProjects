@@ -1,41 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-
-CreditCardPayment creditCardPayment = new CreditCardPayment
-        {
-            TransactionId = "TXN12345",
-            Amount = 100.50m,
-            CardNumber = "1234-5678-9012-3456",
-            CardHolderName = "Emre Demir",
-            ExpiryDate = "12/25",
-            CVV = "123"
-        };
-        creditCardPayment.ProcessPayment();
-        Console.WriteLine();
-
-        
-
-        PayPalPayment payPalPayment = new PayPalPayment
-        {
-            TransactionId = "TXN67890",
-            Amount = 75.25m,
-            PayPalAccountEmail = "emre.demir@example.com"
-        };
-        payPalPayment.ProcessPayment();
-        Console.WriteLine();
-
-       
-       
-        BankTransferPayment bankTransferPayment = new BankTransferPayment
-        {
-            TransactionId = "TXN54321",
-            Amount = 200.00m,
-            BankAccountNumber = "9876543210",
-            BankName = "Ziraat Katılım Bank"
-        };
-        bankTransferPayment.ProcessPayment();
-        Console.WriteLine();
-    
+﻿
 
 
 public abstract class PaymentMethod
