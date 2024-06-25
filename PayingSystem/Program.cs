@@ -13,7 +13,26 @@ CreditCardPayment creditCardPayment = new CreditCardPayment
 
         
 
+        PayPalPayment payPalPayment = new PayPalPayment
+        {
+            TransactionId = "TXN67890",
+            Amount = 75.25m,
+            PayPalAccountEmail = "emre.demir@example.com"
+        };
+        payPalPayment.ProcessPayment();
+        Console.WriteLine();
+
        
+       
+        BankTransferPayment bankTransferPayment = new BankTransferPayment
+        {
+            TransactionId = "TXN54321",
+            Amount = 200.00m,
+            BankAccountNumber = "9876543210",
+            BankName = "Ziraat Katılım Bank"
+        };
+        bankTransferPayment.ProcessPayment();
+        Console.WriteLine();
     
 
 
