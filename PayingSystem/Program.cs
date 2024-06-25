@@ -1,4 +1,20 @@
 ﻿
+CreditCardPayment creditCardPayment = new CreditCardPayment
+        {
+            TransactionId = "TXN12345",
+            Amount = 100.50m,
+            CardNumber = "1234-5678-9012-3456",
+            CardHolderName = "Emre Demir",
+            ExpiryDate = "12/25",
+            CVV = "123"
+        };
+        creditCardPayment.ProcessPayment();
+        Console.WriteLine();
+
+        
+
+       
+    
 
 
 public abstract class PaymentMethod
