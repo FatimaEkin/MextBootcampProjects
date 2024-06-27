@@ -92,3 +92,14 @@ if(Grade=="Sophomore")
 
     
 
+case "2":
+    var students = context.Students.ToList();
+
+    foreach(var student1 in students)
+{
+     Console.WriteLine($"{student1.Name} - {student1.Grade}");
+}
+    break;
+    
+
+   
