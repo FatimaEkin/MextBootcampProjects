@@ -101,5 +101,10 @@ case "2":
 }
     break;
     
+ case "3":
+    Console.WriteLine("Programdan çıkılıyor...");
+    break;
 
+   
+}
    
