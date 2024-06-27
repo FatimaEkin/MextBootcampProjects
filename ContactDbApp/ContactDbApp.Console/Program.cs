@@ -84,4 +84,11 @@ if(Grade=="Sophomore")
         Grade = gradeLevel,
     };
 
+    context.Students.Add(student);
+    context.SaveChanges();
+    Console.WriteLine($"Öğrenci İsmi: {Name} - Öğrenci Sınıfı: {Grade}");
+    break;
     
+
+    
+
