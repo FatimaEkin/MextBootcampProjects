@@ -105,6 +105,13 @@ case "2":
     Console.WriteLine("Programdan çıkılıyor...");
     break;
 
+ default:
+
+    Console.WriteLine("Geçersiz seçim lütfen deneyin...");
+    break;
+
+
+};
    
 }
    
