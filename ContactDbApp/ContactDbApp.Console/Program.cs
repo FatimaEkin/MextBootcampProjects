@@ -40,3 +40,48 @@ Console.WriteLine("3- Çıkış");
 Console.WriteLine("Seçim yapınız: ");
 secim = Console.ReadLine();
 
+switch(secim)
+{
+    case "1" : 
+    Console.WriteLine("Lütfen ismini ekleyin: ");
+    string Name = Console.ReadLine();
+    Console.WriteLine("Lütfen öğrenci sınıfını ekleyiniz");
+    string Grade = Console.ReadLine();
+    
+GradeLevel gradeLevel = GradeLevel.Junior;
+
+if(Grade=="Junior")
+{
+    gradeLevel =GradeLevel.Junior;
+}
+
+
+if(Grade=="Senior")
+{
+    gradeLevel =GradeLevel.Senior;
+}
+
+if(Grade=="Freshman")
+{
+gradeLevel=GradeLevel.Freshman;
+}
+
+
+if(Grade=="Graduate")
+{
+    gradeLevel = GradeLevel.Graduate;
+}
+
+if(Grade=="Sophomore")
+{
+    gradeLevel = GradeLevel.Sophomore;
+}
+
+    Student student = new()
+    {
+        Id = Guid.NewGuid(),
+        Name = Name,
+        Grade = gradeLevel,
+    };
+
+    
