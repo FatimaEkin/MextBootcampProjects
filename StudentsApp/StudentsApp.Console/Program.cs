@@ -8,7 +8,25 @@ Console.WriteLine("Hello, World!");
 
  AppDbContext context = new();
 
+ MemoryCache cache = new(new MemoryCacheOptions()
+ {
+  ExpirationScanFrequency = TimeSpan.FromDays(1),
+ });
+
+var lecturesFromCache = cache.Get<List<Lecture>>("LecturesCacheKey");
+List<Lecture> lectures = null;
+if(lecturesFromCache == null)
+{
+    lectures = context.Lectures.ToList();
+    cache.Set("lecturesCacheKey", lectures);
+   }
+
+ cache.Set("LecturesCacheKey", lectures);
  
+
+ var students = context.Students.ToList();
+
+cache.Set("Students", students);
 
 // Student student = new Student()
 // {
