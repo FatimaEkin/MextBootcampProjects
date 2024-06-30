@@ -28,6 +28,13 @@ if(lecturesFromCache == null)
  });
 
 
+var StudentsFromCache = cache.Get<List<Student>>("StudentsCacheKey");
+List<Student> students = null;
+if(StudentsFromCache == null)
+{
+    students = context.Students.ToList();
+    cache.Set("studentsCacheKey", students);
+   }
  //cache.Set("StudentsCacheKey", lectures);
 
  //var students = context.Students.ToList();
