@@ -21,12 +21,18 @@ if(lecturesFromCache == null)
     cache.Set("lecturesCacheKey", lectures);
    }
 
- cache.Set("LecturesCacheKey", lectures);
- 
+ //cache.Set("StudentsCacheKey", students);
+ MemoryCache cache1 = new(new MemoryCacheOptions()
+ {
+  ExpirationScanFrequency = TimeSpan.FromDays(1),
+ });
 
- var students = context.Students.ToList();
 
-cache.Set("Students", students);
+ //cache.Set("StudentsCacheKey", lectures);
+
+ //var students = context.Students.ToList();
+
+//cache.Set("Students", students);
 
 // Student student = new Student()
 // {
