@@ -24,6 +24,23 @@ namespace MyApp.Namespace
             return Ok(events);
         }
 
+        [HttpGet("{id}")]
+        public IActionResult GetById(Guid id)
+        {
+            var eventData = _eventService.GetById(id);
+
+            return Ok(eventData);
+        }
+
+        [HttpPost]
+        public IActionResult Create(EventAddDto eventAddDto)
+        {
+            _eventService.Add(eventAddDto);
+
+            return Ok();
+        }
+
+
         
 
 
