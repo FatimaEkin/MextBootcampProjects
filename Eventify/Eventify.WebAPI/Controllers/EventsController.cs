@@ -41,7 +41,14 @@ namespace MyApp.Namespace
         }
 
 
-        
+        [HttpPut("{id}")]
+        public IActionResult Update(Guid id, EventUpdateDto eventUpdateDto)
+        {
+            _eventService.Update(id, eventUpdateDto);
+
+            return Ok();
+        }
+
 
 
     }
