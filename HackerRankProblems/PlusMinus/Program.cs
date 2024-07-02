@@ -23,7 +23,7 @@
             {
                 countZero++;
             }
-         }
+        }
         double ratioPositive = (double)countPositive / n;
         double ratioNegative = (double)countNegative / n;
         double ratioZero = (double)countZero / n;
