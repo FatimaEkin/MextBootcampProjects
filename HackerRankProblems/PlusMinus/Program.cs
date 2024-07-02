@@ -4,7 +4,7 @@
 
     public static void plusMinus(List<int> arr)
     {
-         int countPositive = 0;
+        int countPositive = 0;
         int countNegative = 0;
         int countZero = 0;
         int n = arr.Count;
