@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillDivision", "BillDivisio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppleAndOrange", "AppleAndOrange\AppleAndOrange.csproj", "{FC8114CE-9717-4B3D-8FC1-CE14597608EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BirthdayCakeCandles", "BirthdayCakeCandles\BirthdayCakeCandles.csproj", "{57B46A91-6881-4F06-8C00-8ECF4EEE1A07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{FC8114CE-9717-4B3D-8FC1-CE14597608EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC8114CE-9717-4B3D-8FC1-CE14597608EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC8114CE-9717-4B3D-8FC1-CE14597608EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57B46A91-6881-4F06-8C00-8ECF4EEE1A07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57B46A91-6881-4F06-8C00-8ECF4EEE1A07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57B46A91-6881-4F06-8C00-8ECF4EEE1A07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57B46A91-6881-4F06-8C00-8ECF4EEE1A07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
